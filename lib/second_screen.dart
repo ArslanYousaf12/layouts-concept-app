@@ -1,3 +1,4 @@
+import 'package:app_navigation/safe_area.dart';
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {
@@ -31,7 +32,9 @@ class LandScapeLayout extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
-            Navigator.pop(context);
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return const SafeAreaScreen();
+            }));
           },
           child: Text('Go back to HomeScreen'),
         ),
@@ -53,7 +56,9 @@ class PortraitLayout extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
-            Navigator.pop(context);
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return const SafeAreaScreen();
+            }));
           },
           child: Text('Go back to HomeScreen'),
         ),
