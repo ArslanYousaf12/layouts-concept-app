@@ -36,7 +36,7 @@ class LandScapeLayout extends StatelessWidget {
               return const SafeAreaScreen();
             }));
           },
-          child: Text('Go back to HomeScreen'),
+          child: Text('Go back to Safe area screen'),
         ),
       ],
     );
@@ -60,7 +60,7 @@ class PortraitLayout extends StatelessWidget {
               return const SafeAreaScreen();
             }));
           },
-          child: Text('Go back to HomeScreen'),
+          child: Text('Go back to safearea screen'),
         ),
       ],
     );
