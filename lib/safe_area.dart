@@ -21,7 +21,8 @@ class SafeAreaScreen extends StatelessWidget {
                 child: Text('SafeAreaScreen')),
           ),
         ],
-      )),
+      )
+      ),
     );
   }
 }
