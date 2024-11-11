@@ -1,4 +1,5 @@
 import 'package:app_navigation/Flex_concept.dart';
+import 'package:app_navigation/counter.dart';
 import 'package:app_navigation/second_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const  flexwidget(),
+      home: const  CounterScreen(),
     );
   }
 }
