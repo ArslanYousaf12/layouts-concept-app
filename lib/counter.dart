@@ -1,15 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: CounterScreen(),
-    );
-  }
-}
 
 class CounterScreen extends StatefulWidget {
   @override
@@ -17,13 +7,14 @@ class CounterScreen extends StatefulWidget {
 }
 
 class _CounterScreenState extends State<CounterScreen> {
-  int counter = 0;
+  int counter = 1;
+  int result= 2;
   String evenOdd = 'Even'; // Initial display message
 
   void incrementCounter() {
     setState(() {
       counter++;
-      evenOdd = (counter % 2 == 0) ? 'Even' : 'odd' ;
+     result = 2 * counter;
     });
   }
 
@@ -38,7 +29,7 @@ class _CounterScreenState extends State<CounterScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Counter: $counter',
+                '2 * $counter = $result',
             style: TextStyle(fontSize: 25),),
             SizedBox(height: 10,),
             Text(' The number is $evenOdd',
