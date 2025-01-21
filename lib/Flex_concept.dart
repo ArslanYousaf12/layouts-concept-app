@@ -8,7 +8,7 @@ class  flexwidget extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey,
-        title: Text('concept of Flex',style: TextStyle(color: Colors.brown,fontSize: 30,fontWeight: FontWeight.w600),),
+        title: Text('concept of Flex',style: TextStyle(color: Colors.brown,fontSize: 30,fontWeight: FontWeight.w700),),
       ),
       body: Column(
         children: [
